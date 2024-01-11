@@ -6,7 +6,7 @@ import { Feedback } from './Feedback/Feedback';
 import './App.css';
 
 export const App = () => {
-  const [feedbackTypes] = useState({
+  const [feedbackTypes, setFeedbackTypes] = useState({
     good: 0,
     neutral: 0,
     bad: 0,
@@ -22,7 +22,7 @@ export const App = () => {
         </li>
 
         <li>
-          <Options />
+          <Options value={feedbackTypes} valueSet={setFeedbackTypes} />
         </li>
 
         <li>
