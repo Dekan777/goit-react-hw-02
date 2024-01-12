@@ -6,11 +6,11 @@ export const Feedback = ({ value: { good, neutral, bad } }) => {
     <div>
       {totalFeedback > 0 ? (
         <>
-          <p className={css.text}>Good: {good}</p>
-          <p className={css.text}>Neutral: {neutral}</p>
-          <p className={css.text}>Bad: {bad}</p>
-          <p className={css.text}>Total:{totalFeedback}</p>
-          <p className={css.text}>Positive{positive}</p>
+          <p>Good: {good}</p>
+          <p>Neutral: {neutral}</p>
+          <p>Bad: {bad}</p>
+          <p>Total:{totalFeedback}</p>
+          <p>Positive{positive}</p>
         </>
       ) : (
         <p className={css.text}>No feedback yet.</p>
