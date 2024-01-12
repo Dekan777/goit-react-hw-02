@@ -13,7 +13,7 @@ export const Feedback = ({ value: { good, neutral, bad } }) => {
           <p className={css.text}>Positive{positive}</p>
         </>
       ) : (
-        <p>No feedback yet.</p>
+        <p className={css.text}>No feedback yet.</p>
       )}
     </div>
   );
