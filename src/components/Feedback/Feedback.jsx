@@ -1,4 +1,3 @@
-import css from './Feedback.module.css';
 export const Feedback = ({ value: { good, neutral, bad } }) => {
   const totalFeedback = good + neutral + bad;
   const positive = Math.round(((good + neutral) / totalFeedback) * 100);
