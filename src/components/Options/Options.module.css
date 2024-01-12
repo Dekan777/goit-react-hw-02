@@ -1,4 +1,4 @@
-.OptionsBtn {
+.btn {
   padding: 10px 20px; /* Отступы внутри кнопки */
   font-size: 16px; /* Размер шрифта */
   background-color: #3498db; /* Цвет фона кнопки */
@@ -8,11 +8,11 @@
   transition: background-color 0.3s ease, color 0.3s ease; /* Плавные переходы цветов */
 }
 
-.OptionsBtn:hover {
+.btn:hover {
   background-color: #2980b9; /* Цвет фона при наведении */
 }
 
-.optionsBtnItem {
+.btnItem {
   display: flex;
   gap: 5px;
 }
