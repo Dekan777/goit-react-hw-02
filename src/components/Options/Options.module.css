@@ -5,20 +5,11 @@
   color: #fff; /* Цвет текста кнопки */
   border: 1px solid #3498db; /* Обводка кнопки */
   border-radius: 5px; /* Закругленные углы */
-  cursor: pointer; /* Изменение формы указателя при наведении */
   transition: background-color 0.3s ease, color 0.3s ease; /* Плавные переходы цветов */
 }
 
 .OptionsBtn:hover {
   background-color: #2980b9; /* Цвет фона при наведении */
-  border-color: #2980b9; /* Цвет обводки при наведении */
-  color: #fff; /* Цвет текста при наведении */
-}
-
-.OptionsBtn:active {
-  background-color: #216a94; /* Цвет фона при нажатии */
-  border-color: #216a94; /* Цвет обводки при нажатии */
-  color: #fff; /* Цвет текста при нажатии */
 }
 
 .optionsBtnItem {
