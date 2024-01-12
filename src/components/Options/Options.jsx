@@ -1,3 +1,4 @@
+import css from './Options.module.css';
 export const Options = ({ value, valueSet }) => {
   const handleClick = type => {
     const newFeedbackTypes = { ...value };
@@ -13,11 +14,21 @@ export const Options = ({ value, valueSet }) => {
   const hasFeedback = value.good + value.neutral + value.bad > 0;
 
   return (
-    <div>
-      <button onClick={() => handleClick('good')}>Good</button>
-      <button onClick={() => handleClick('neutral')}>Neutral</button>
-      <button onClick={() => handleClick('bad')}>Bad</button>
-      {hasFeedback && <button onClick={handleReset}>Reset</button>}
+    <div className={css.optionsBtnItem}>
+      <button className={css.OptionsBtn} onClick={() => handleClick('good')}>
+        Good
+      </button>
+      <button className={css.OptionsBtn} onClick={() => handleClick('neutral')}>
+        Neutral
+      </button>
+      <button className={css.OptionsBtn} onClick={() => handleClick('bad')}>
+        Bad
+      </button>
+      {hasFeedback && (
+        <button className={css.OptionsBtn} onClick={handleReset}>
+          Reset
+        </button>
+      )}
     </div>
   );
 };

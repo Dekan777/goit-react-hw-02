@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import { useState, useEffect } from 'react';
 import { Description } from './Description/Description';
 import { Options } from './Options/Options';
@@ -20,7 +19,7 @@ export const App = () => {
 
   return (
     <>
-      <ul>
+      <ul className="conteinerApp">
         <li>
           <Description text="Sip Happens Café">
             Please leave your feedback about our service by selecting one of the options below.
